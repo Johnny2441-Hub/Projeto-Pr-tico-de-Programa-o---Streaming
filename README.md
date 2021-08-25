@@ -13,7 +13,10 @@
 | 320105922  | Beatriz dos Santos Haxkar         | TADS  | 3 |
 | 420104325  |  Luigi Pinto Spinella             | TADS  | 3 |
 | 420106055  |  Mateus dos Santos Beserra        | TADS  | 3 | 
- 
+| 420108342  |  Raul Victor Jeronimo             | TADS  | 3 | 
+| 420100108  |  Maria Eduarda Da Silva Batista   | TADS  | 3 | 
+| 320100048  |  Ricardo Fanzin da Cruz           | TADS  | 3 | 
+
 
 ## Descrição do Projeto 
 A empresa Netflix é um Streaming de Filmes, Séries, Desenhos e documentários 
