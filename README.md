@@ -3,7 +3,8 @@
 
 ## Dados da Turma
 * Dia da semana: **Segunda-Feira e Quarta-Feira**
-* Período: **Manhã**
+* Período: **Manhã** 
+* Professor: **Daniel Ferreira de Barros Junior**
 
 ## Integrantes
 | RA   | NOME COMPLETO | CURSO | TURMA |
@@ -20,7 +21,7 @@ A empresa Netflix é um Streaming de Filmes, Séries, Desenhos e documentários
 
 * Endereço da aplicação  
 	- Site hospedado na nuvem(porém com problemas na exibição das imagens)
-	+ http://cadastech.atwebpages.com  
+	+ Awardspace
 
 ## Outras Observações 
  
