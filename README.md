@@ -1,1 +1,1 @@
-# Projeto-Pr-tico-de-Programa-o---Streaming
+# Projeto-Pratico-de-Programacao-Streaming
