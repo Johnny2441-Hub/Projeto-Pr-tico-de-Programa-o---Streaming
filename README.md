@@ -14,7 +14,6 @@
 | 420104325  |  Luigi Pinto Spinella             | TADS  | 3 |
 | 420106055  |  Mateus dos Santos Beserra        | TADS  | 3 | 
 | 420108342  |  Raul Victor Jeronimo             | TADS  | 3 | 
-| 420100108  |  Maria Eduarda Da Silva Batista   | TADS  | 3 | 
 | 320100048  |  Ricardo Fanzin da Cruz           | TADS  | 3 |
 | 420109865  | João Gabriel Araújo Farias        | TADS  | 3 | 
 
