@@ -1,4 +1,4 @@
-# Projeto-Pratico-de-Programacao-Streaming
+# Projeto-Pratico-de-Programacaou-uni9flix-Streaming
 
 
 ## Dados da Turma
@@ -20,11 +20,11 @@
 
 
 ## Descrição do Projeto 
-A empresa Netflix é um Streaming de Filmes, Séries, Desenhos e documentários 
+A Uni9flix é um Streaming de Filmes, Séries e documentários proporcionado pela universidade nove de julho para seus estudantes.
 ## Endereço da Aplicação
 
 * Endereço da aplicação  
-	- Site hospedado na nuvem(porém com problemas na exibição das imagens)
+	- colocar o link aqui
 	+ Awardspace
 
 ## Outras Observações 
