@@ -1,4 +1,4 @@
-# Projeto-Pratico-de-Programacaou-uni9flix-Streaming
+# Projeto-Pratico-de-Programacao-uni9flix-Streaming
 
 
 ## Dados da Turma
