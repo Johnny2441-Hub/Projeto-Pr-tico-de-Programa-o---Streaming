@@ -28,4 +28,5 @@ A Uni9flix é um Streaming de Filmes, Séries e documentários proporcionado pel
 	+ Awardspace
 
 ## Outras Observações 
- 
+
+Uni9flix é um site fictício criado para um projeto prático da Universidade nove de julho.
