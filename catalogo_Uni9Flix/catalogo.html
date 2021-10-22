@@ -1,0 +1,927 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <title> Uni9Flix - Streaming Nove de Julho </title>
+
+    <!-- SEO -->
+    <title>Uni9Flix - Streaming Nove de Julho</title>
+    <meta name="description" content="Netflix">
+
+    <!-- Bootstrap 4.4.1 -->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <!-- Flickity 2.2.1 -->
+    <link rel="stylesheet" type="text/css" href="css/flickity.css">
+    <!-- JQuery UI -->
+    <link rel="stylesheet" type="text/css" href="css/jquery-ui.css">
+    <!-- Main CSS -->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+    <!-- FAVICONS -->
+    <link rel="shortcut icon" type="image/x-icon" href="media/images/netflix_icon.png">
+    <link rel="shortcut icon" sizes="16x16" href="media/favicon/favicon-16x16.png">
+    <link rel="shortcut icon" sizes="32x32" href="media/favicon/favicon-32x32.png">
+    <link rel="apple-touch-icon icon" sizes="76x76" href="media/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon icon" sizes="120x120" href="media/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon icon" sizes="152x152" href="media/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon icon" sizes="180x180" href="media/favicon/apple-icon-180x180.png">
+
+    <!-- Android -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="theme-color" content="#141414">
+</head>
+
+<body>
+
+    <div class="popup" id="popup-1">
+        <div class="overlay_sinopse" onclick="togglePopup()"></div>
+        <div class="content">
+            <div class="close-btn " onclick="togglePopup()">&times;</div>
+            <img id="imagem" class="mb-3" src="" alt="" width="175px" height="250px">
+            <h1 id="titulo" class="mb-3">Title</h1>
+            <p id="conteudo">
+                content
+            </p>
+        </div>
+    </div>
+
+    <!-- Navbar - OPEN -->
+    <nav class="navbar navbar-expand-lg fixed-top navbar-dark" id="navbar">
+        <!-- Navbar content - OPEN -->
+        <div class="container-lg">
+
+            <!-- Logo - OPEN -->
+            <a class="navbar-brand logo" href="/">
+                <img src="media/images/logo.png" width="80" alt="">
+            </a>
+            <!-- Logo - CLOSE -->
+
+            <!-- Content collapse - OPEN -->
+            <div class="collapse navbar-collapse" id="navbarToggler">
+
+                <!-- Left - OPEN -->
+                <ul class="navbar-nav mr-auto my-2 my-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link navbar-nav-item" href="index.html">
+                            Inicial
+                        </a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link navbar-nav-item" href="catalogo.html">
+                            Catálogo <span class="sr-only">(current)</span>
+                        </a>
+                    </li>
+                </ul>
+                <!-- Left - CLOSE -->
+
+            </div>
+            <!-- Content collapse - CLOSE -->
+
+        </div>
+        <!-- Navbar content - CLOSE -->
+
+    </nav>
+    <!-- Navbar - CLOSE -->
+
+    <!-- Slider - OPEN -->
+
+    <!-- Content - OPEN -->
+    <div class="container-lg margin-top margin-bottom">
+
+        <!-- Tabs nav - OPEN -->
+        <nav class="nav nav-fill nav-pills" id="pills-tab" role="tablist">
+            <a class="nav-item nav-link active" id="trend-tab" data-toggle="pill" href="#trend" role="tab"
+                aria-controls="trend-tab" aria-selected="true">
+                <div class="icon-nav">
+                    <img src="media/icons/trend.png" width="20" alt="" class="margin-right-sm">
+                    Top - Hoje
+                </div>
+            </a>
+        </nav>
+        <!-- Tabs nav - CLOSE -->
+
+        <!-- Tabs content - OPEN -->
+        <div class="tab-content" id="myTabContent">
+
+            <!-- Trend tab - OPEN -->
+            <div class="margin-top-under-sm tab-pane fade show active" id="trend" role="tabpanel"
+                aria-labelledby="trend-tab">
+
+                <!-- Carousel - OPEN -->
+                <div class="carousel"
+                    data-flickity='{ "groupCells": true, "cellAlign": "center", "pageDots": false, "wrapAround": false, "draggable": false }'
+                    style="height: 400px">
+
+                    <div class="carousel-cell">
+                        <img class="carousel-cell-image" src="media/images/posters/hp_2001.jpg" />
+                        <h5 class="text-center">Harry Potter <br>e a Pedra Filosofal</h5>
+                        <div class="overlay">
+                            <div class="text">
+                                <a onclick="togglePopup('Harry Potter: Pedra Filosofal')"
+                                    class="btn btn-secondary btn-sm margin-top-under-sm" role="button"
+                                    aria-pressed="true">
+                                    <img src="media/icons/info.png" width="10" alt="">
+                                    Informações
+                                </a>
+                                <a href="#" class="btn btn-primary btn-sm margin-top-under-sm" role="button"
+                                    aria-pressed="true">
+                                    <img src="media/icons/play.png" width="10" alt="">
+                                    Assistir
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carousel-cell">
+                        <img class="carousel-cell-image" src="media/images/posters/hp_2002.jpg" />
+                        <h5 class="text-center">Harry Potter <br> e a Câmara Secreta</h5>
+                        <div class="overlay">
+                            <div class="text">
+                                <a onclick="togglePopup('Harry Potter: Camara Secreta')"
+                                    class="btn btn-secondary btn-sm margin-top-under-sm" role="button"
+                                    aria-pressed="true">
+                                    <img src="media/icons/info.png" width="10" alt="">
+                                    Informações
+                                </a>
+                                <a href="#" class="btn btn-primary btn-sm margin-top-under-sm" role="button"
+                                    aria-pressed="true">
+                                    <img src="media/icons/play.png" width="10" alt="">
+                                    Assistir
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carousel-cell">
+                        <img class="carousel-cell-image" src="media/images/posters/hp_2004.jpg" />
+                        <h5 class="text-center">Harry Potter <br> e o Prisioneiro de Azkaban</h5>
+                        <div class="overlay">
+                            <div class="text">
+                                <a onclick="togglePopup('Harry Potter e o Prisioneiro de Azkaban')"
+                                    class="btn btn-secondary btn-sm margin-top-under-sm" role="button"
+                                    aria-pressed="true">
+                                    <img src="media/icons/info.png" width="10" alt="">
+                                    Informações
+                                </a>
+                                <a href="#" class="btn btn-primary btn-sm margin-top-under-sm" role="button"
+                                    aria-pressed="true">
+                                    <img src="media/icons/play.png" width="10" alt="">
+                                    Assistir
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carousel-cell">
+                        <img class="carousel-cell-image" src="media/images/posters/interestelar.jpg" />
+                        <h5 class="text-center">Interestelar</h5>
+                        <div class="overlay">
+                            <div class="text">
+                                <a onclick="togglePopup('Interestelar')"
+                                    class="btn btn-secondary btn-sm margin-top-under-sm" role="button"
+                                    aria-pressed="true">
+                                    <img src="media/icons/info.png" width="10" alt="">
+                                    Informações
+                                </a>
+                                <a href="#" class="btn btn-primary btn-sm margin-top-under-sm" role="button"
+                                    aria-pressed="true">
+                                    <img src="media/icons/play.png" width="10" alt="">
+                                    Assistir
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carousel-cell">
+                        <img class="carousel-cell-image" src="media/images/posters/Vingadores_ultimato.jpg" />
+                        <h5 class="text-center">Vingadores Ultimato</h5>
+                        <div class="overlay">
+                            <div class="text">
+                                <a onclick="togglePopup('Vingadores Ultimato')"
+                                    class="btn btn-secondary btn-sm margin-top-under-sm" role="button"
+                                    aria-pressed="true">
+                                    <img src="media/icons/info.png" width="10" alt="">
+                                    Informações
+                                </a>
+                                <a href="#" class="btn btn-primary btn-sm margin-top-under-sm" role="button"
+                                    aria-pressed="true">
+                                    <img src="media/icons/play.png" width="10" alt="">
+                                    Assistir
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carousel-cell">
+                        <img class="carousel-cell-image" src="media/images/posters/piratas_salazar.jpg" />
+                        <h5 class="text-center">Piratas do Caribe: A Vingança de Salazar</h5>
+                        <div class="overlay">
+                            <div class="text">
+                                <a onclick="togglePopup('Piratas do Caribe A Vingança de Salazar')"
+                                    class="btn btn-secondary btn-sm margin-top-under-sm" role="button"
+                                    aria-pressed="true">
+                                    <img src="media/icons/info.png" width="10" alt="">
+                                    Informações
+                                </a>
+                                <a href="#" class="btn btn-primary btn-sm margin-top-under-sm" role="button"
+                                    aria-pressed="true">
+                                    <img src="media/icons/play.png" width="10" alt="">
+                                    Assistir
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="carousel-cell">
+                        <img class="carousel-cell-image" src="media/images/posters/aranhaverso.jpg" />
+                        <h5 class="text-center">Homem-Aranha no Aranhaverso</h5>
+                        <div class="overlay">
+                            <div class="text">
+                                <a onclick="togglePopup('Homem-Aranha no Aranhaverso')"
+                                    class="btn btn-secondary btn-sm margin-top-under-sm" role="button"
+                                    aria-pressed="true">
+                                    <img src="media/icons/info.png" width="10" alt="">
+                                    Informações
+                                </a>
+                                <a href="#" class="btn btn-primary btn-sm margin-top-under-sm" role="button"
+                                    aria-pressed="true">
+                                    <img src="media/icons/play.png" width="10" alt="">
+                                    Assistir
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carousel-cell">
+                        <img class="carousel-cell-image" src="media/images/posters/spacejam2.jpg" />
+                        <h5 class="text-center">Space Jam: Um Novo Legado</h5>
+                        <div class="overlay">
+                            <div class="text">
+                                <a onclick="togglePopup('Space Jam: Um Novo Legado')"
+                                    class="btn btn-secondary btn-sm margin-top-under-sm" role="button"
+                                    aria-pressed="true">
+                                    <img src="media/icons/info.png" width="10" alt="">
+                                    Informações
+                                </a>
+                                <a href="#" class="btn btn-primary btn-sm margin-top-under-sm" role="button"
+                                    aria-pressed="true">
+                                    <img src="media/icons/play.png" width="10" alt="">
+                                    Assistir
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carousel-cell">
+                        <img class="carousel-cell-image" src="media/images/posters/doisfilhosdefrancisco.jpg" />
+                        <h5 class="text-center">2 Filhos de Francisco</h5>
+                        <div class="overlay">
+                            <div class="text">
+                                <a onclick="togglePopup('2 Filhos de Francisco A História de Zeze di Camargo & Luciano')"
+                                    class="btn btn-secondary btn-sm margin-top-under-sm" role="button"
+                                    aria-pressed="true">
+                                    <img src="media/icons/info.png" width="10" alt="">
+                                    Informações
+                                </a>
+                                <a href="#" class="btn btn-primary btn-sm margin-top-under-sm" role="button"
+                                    aria-pressed="true">
+                                    <img src="media/icons/play.png" width="10" alt="">
+                                    Assistir
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carousel-cell">
+                        <img class="carousel-cell-image" src="media/images/posters/creed.jpg" />
+                        <h5 class="text-center">Creed: Nascido para Lutar</h5>
+                        <div class="overlay">
+                            <div class="text">
+                                <a onclick="togglePopup('Creed: Nascido para Lutar')"
+                                    class="btn btn-secondary btn-sm margin-top-under-sm" role="button"
+                                    aria-pressed="true">
+                                    <img src="media/icons/info.png" width="10" alt="">
+                                    Informações
+                                </a>
+                                <a href="#" class="btn btn-primary btn-sm margin-top-under-sm" role="button"
+                                    aria-pressed="true">
+                                    <img src="media/icons/play.png" width="10" alt="">
+                                    Assistir
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Carousel - CLOSE -->
+
+            </div>
+            <!-- Trend tab - CLOSE -->
+        </div>
+        <!-- Tabs content - OPEN -->
+
+        <!-- Tabs nav - OPEN -->
+        <nav class="nav nav-fill nav-pills" id="explore-tabs" role="tablist">
+            <a class="nav-item nav-link active" id="movies-tab" href="catalogo.html" role="tab">
+                <div class="icon-nav">
+                    <img src="media/icons/cinema.png" width="15" alt="" class="margin-right-sm padding-bottom-sm">
+                    Filmes
+                </div>
+            </a>
+            <a class="nav-item nav-link " id="tvshows-tab" href="catalogo_series.html" role="tab">
+                <div class="icon-nav">
+                    <img src="media/icons/tv.png" width="15" alt="" class="margin-right-sm padding-bottom-sm">
+                    Séries
+                </div>
+            </a>
+            <a class="nav-item nav-link" id="document-tab" href="catalogo_document.html" role="tab">
+                <div class="icon-nav">
+                    <img src="media/icons/document.png" width="15" alt="" class="margin-right-sm padding-bottom-sm">
+                    Documentários
+                </div>
+            </a>
+        </nav>
+        <!-- Tabs nav - CLOSE -->
+
+        <!-- Tabs content - OPEN -->
+        <div class="tab-content" id="exploreContent">
+            <!-- Movies tab - OPEN -->
+            <div class="margin-top-under-sm tab-pane fade show active" id="movies" role="tabpanel"
+                aria-labelledby="movies-tab">
+
+                <!-- Grid cards films - OPEN -->
+                <div id="grid-movies">
+
+                    <div class="card-deck margin-top">
+
+                        <!-- Beasts of No Nation - OPEN -->
+                        <div class="card carousel-cell">
+                            <img class="card-image-top" src="media/images/posters/hp_2002.jpg" />
+                            <h5 class="text-center">Harry Potter <br>e a Câmara Secreta</h5>
+                            <div class="overlay">
+                                <div class="text">
+                                    <a onclick="togglePopup('Harry Potter: Camara Secreta')"
+                                        class="btn btn-secondary btn-sm margin-top-under-sm" role="button"
+                                        aria-pressed="true">
+                                        <img src="media/icons/info.png" width="10" alt="">
+                                        Informações
+                                    </a>
+                                    <a class="btn btn-primary btn-sm margin-top-under-sm" role="button"
+                                        aria-pressed="true">
+                                        <img src="media/icons/play.png" width="10" alt="">
+                                        Assistir
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card carousel-cell Action">
+                            <img class="card-img-top" src="media/images/posters/el_camino.jpg" />
+                            <h5 class="card-title text-center">O Caminho: <BR>Um filme de Breaking Bad </h5>
+                            <div class="overlay">
+                                <div class="text">
+                                    <a onclick="togglePopup('O Caminho: Um filme de Breaking Bad')"
+                                        class="btn btn-secondary btn-sm margin-top-under-sm" role="button"
+                                        aria-pressed="true">
+                                        <img src="media/icons/info.png" width="10" alt="">
+                                        Informações
+                                    </a>
+                                    <a class="btn btn-primary btn-sm margin-top-under-sm" role="button"
+                                        aria-pressed="true">
+                                        <img src="media/icons/play.png" width="10" alt="">
+                                        Assistir
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card carousel-cell">
+                            <img class="card-img-top" src="media/images/posters/dark_knight.jpg" />
+                            <h5 class="card-title text-center">Batman: <BR>O Cavaleiro das Trevas </h5>
+                            <div class="overlay">
+                                <div class="text">
+                                    <a onclick="togglePopup('Batman: O Cavaleiro das Trevas')"
+                                        class="btn btn-secondary btn-sm margin-top-under-sm" role="button"
+                                        aria-pressed="true">
+                                        <img src="media/icons/info.png" width="10" alt="">
+                                        Informações
+                                    </a>
+                                    <a class="btn btn-primary btn-sm margin-top-under-sm" role="button"
+                                        aria-pressed="true">
+                                        <img src="media/icons/play.png" width="10" alt="">
+                                        Assistir
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card carousel-cell">
+                            <img class="card-img-top" src="media/images/posters/inception.png" />
+                            <h5 class="card-title text-center"> A Origem </h5>
+                            <div class="overlay">
+                                <div class="text">
+                                    <a onclick="togglePopup('A Origem')"
+                                        class="btn btn-secondary btn-sm margin-top-under-sm" role="button"
+                                        aria-pressed="true">
+                                        <img src="media/icons/info.png" width="10" alt="">
+                                        Informações
+                                    </a>
+                                    <a class="btn btn-primary btn-sm margin-top-under-sm" role="button"
+                                        aria-pressed="true">
+                                        <img src="media/icons/play.png" width="10" alt="">
+                                        Assistir
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card carousel-cell">
+                            <img class="card-img-top" src="media/images/posters/okja.jpg" />
+                            <h5 class="card-title text-center"> Okja </h5>
+                            <div class="overlay">
+                                <div class="text">
+                                    <a onclick="togglePopup('Okja')"
+                                        class="btn btn-secondary btn-sm margin-top-under-sm" role="button"
+                                        aria-pressed="true">
+                                        <img src="media/icons/info.png" width="10" alt="">
+                                        Informações
+                                    </a>
+                                    <a class="btn btn-primary btn-sm margin-top-under-sm" role="button"
+                                        aria-pressed="true">
+                                        <img src="media/icons/play.png" width="10" alt="">
+                                        Assistir
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card-deck">
+
+                        <!-- Birdman - OPEN -->
+                        <div class="card carousel-cell">
+                            <img class="card-img-top" src="media/images/posters/interestelar.jpg" />
+                            <h5 class="card-title text-center">Interestelar</h5>
+                            <div class="overlay">
+                                <div class="text">
+                                    <a onclick="togglePopup('Interestelar')"
+                                        class="btn btn-secondary btn-sm margin-top-under-sm" role="button"
+                                        aria-pressed="true">
+                                        <img src="media/icons/info.png" width="10" alt="">
+                                        Informações
+                                    </a>
+                                    <a class="btn btn-primary btn-sm margin-top-under-sm" role="button"
+                                        aria-pressed="true">
+                                        <img src="media/icons/play.png" width="10" alt="">
+                                        Assistir
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card carousel-cell">
+                            <img class="card-img-top" src="media/images/posters/jaws.jpeg" />
+                            <h5 class="card-title text-center"> Tubarão </h5>
+                            <div class="overlay">
+                                <div class="text">
+                                    <a onclick="togglePopup('Tubarao')"
+                                        class="btn btn-secondary btn-sm margin-top-under-sm" role="button"
+                                        aria-pressed="true">
+                                        <img src="media/icons/info.png" width="10" alt="">
+                                        Informações
+                                    </a>
+                                    <a class="btn btn-primary btn-sm margin-top-under-sm" role="button"
+                                        aria-pressed="true">
+                                        <img src="media/icons/play.png" width="10" alt="">
+                                        Assistir
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card carousel-cell">
+                            <img class="card-img-top" src="media/images/posters/blade_runner.jpg" />
+                            <h5 class="card-title text-center"> Blade Runner </h5>
+                            <div class="overlay">
+                                <div class="text">
+                                    <a onclick="togglePopup('Blade Runner')"
+                                        class="btn btn-secondary btn-sm margin-top-under-sm" role="button"
+                                        aria-pressed="true">
+                                        <img src="media/icons/info.png" width="10" alt="">
+                                        Informações
+                                    </a>
+                                    <a class="btn btn-primary btn-sm margin-top-under-sm" role="button"
+                                        aria-pressed="true">
+                                        <img src="media/icons/play.png" width="10" alt="">
+                                        Assistir
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card carousel-cell">
+                            <img class="card-img-top" src="media/images/posters/blade_runner_2049.jpg" />
+                            <h5 class="card-title text-center"> Blade Runner 2049 </h5>
+                            <div class="overlay">
+                                <div class="text">
+                                    <a onclick="togglePopup('Blade Runner 2049')"
+                                        class="btn btn-secondary btn-sm margin-top-under-sm" role="button"
+                                        aria-pressed="true">
+                                        <img src="media/icons/info.png" width="10" alt="">
+                                        Informações
+                                    </a>
+                                    <a class="btn btn-primary btn-sm margin-top-under-sm" role="button"
+                                        aria-pressed="true">
+                                        <img src="media/icons/play.png" width="10" alt="">
+                                        Assistir
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card carousel-cell">
+                            <img class="card-img-top" src="media/images/posters/call_me_by_your_name.jpg" />
+                            <h5 class="card-title text-center"> Me Chame Pelo Seu Nome </h5>
+                            <div class="overlay">
+                                <div class="text">
+                                    <a onclick="togglePopup('Me Chame Pelo Seu Nome')"
+                                        class="btn btn-secondary btn-sm margin-top-under-sm" role="button"
+                                        aria-pressed="true">
+                                        <img src="media/icons/info.png" width="10" alt="">
+                                        Informações
+                                    </a>
+                                    <a class="btn btn-primary btn-sm margin-top-under-sm" role="button"
+                                        aria-pressed="true">
+                                        <img src="media/icons/play.png" width="10" alt="">
+                                        Assistir
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- Second row of Card Deck Layout - OPEN -->
+
+                    <!-- Third row of Card Deck Layout - OPEN -->
+                    <div class="card-deck">
+
+                        <div class="card carousel-cell">
+                            <img class="card-img-top" src="media/images/posters/wonder_woman.jpg" />
+                            <h5 class="card-title text-center"> Mulher Maravilha </h5>
+                            <div class="overlay">
+                                <div class="text">
+                                    <a onclick="togglePopup('Mulher Maravilha')"
+                                        class="btn btn-secondary btn-sm margin-top-under-sm" role="button"
+                                        aria-pressed="true">
+                                        <img src="media/icons/info.png" width="10" alt="">
+                                        Informações
+                                    </a>
+                                    <a class="btn btn-primary btn-sm margin-top-under-sm" role="button"
+                                        aria-pressed="true">
+                                        <img src="media/icons/play.png" width="10" alt="">
+                                        Assistir
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Wonder Woman - OPEN -->
+
+                        <!-- Dallas Buyers Club - OPEN -->
+                        <div class="card carousel-cell">
+                            <img class="card-img-top" src="media/images/posters/dallas_buyers_club.jpg" />
+                            <h5 class="card-title text-center"> Clube de Compras Dallas </h5>
+                            <div class="overlay">
+                                <div class="text">
+                                    <a onclick="togglePopup('Clube de Compras Dallas')"
+                                        class="btn btn-secondary btn-sm margin-top-under-sm" role="button"
+                                        aria-pressed="true">
+                                        <img src="media/icons/info.png" width="10" alt="">
+                                        Informações
+                                    </a>
+                                    <a class="btn btn-primary btn-sm margin-top-under-sm" role="button"
+                                        aria-pressed="true">
+                                        <img src="media/icons/play.png" width="10" alt="">
+                                        Assistir
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Dallas Buyers Club - OPEN -->
+
+                        <!-- The Revenant - OPEN -->
+                        <div class="card carousel-cell">
+                            <img class="card-img-top" src="media/images/posters/the_revenant.jpg" />
+                            <h5 class="card-title text-center"> O Regresso </h5>
+                            <div class="overlay">
+                                <div class="text">
+                                    <a onclick="togglePopup('O Regresso')"
+                                        class="btn btn-secondary btn-sm margin-top-under-sm" role="button"
+                                        aria-pressed="true">
+                                        <img src="media/icons/info.png" width="10" alt="">
+                                        Informações
+                                    </a>
+                                    <a class="btn btn-primary btn-sm margin-top-under-sm" role="button"
+                                        aria-pressed="true">
+                                        <img src="media/icons/play.png" width="10" alt="">
+                                        Assistir
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- The Revenant - OPEN -->
+
+                        <!-- The Terminator - OPEN -->
+                        <div class="card carousel-cell">
+                            <img class="card-img-top" src="media/images/posters/the_terminator.jpg" />
+                            <h5 class="card-title text-center"> O Exterminador do Futuro </h5>
+                            <div class="overlay">
+                                <div class="text">
+                                    <a onclick="togglePopup('O Exterminador do Futuro')"
+                                        class="btn btn-secondary btn-sm margin-top-under-sm" role="button"
+                                        aria-pressed="true">
+                                        <img src="media/icons/info.png" width="10" alt="">
+                                        Informações
+                                    </a>
+                                    <a class="btn btn-primary btn-sm margin-top-under-sm" role="button"
+                                        aria-pressed="true">
+                                        <img src="media/icons/play.png" width="10" alt="">
+                                        Assistir
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- The Terminator - OPEN -->
+
+                        <!-- Ex Machina - OPEN -->
+                        <div class="card carousel-cell">
+                            <img class="card-img-top" src="media/images/posters/ex_machina.jpg" />
+                            <h5 class="card-title text-center"> Ex Machina </h5>
+                            <div class="overlay">
+                                <div class="text">
+                                    <a onclick="togglePopup('Ex Machina')"
+                                        class="btn btn-secondary btn-sm margin-top-under-sm" role="button"
+                                        aria-pressed="true">
+                                        <img src="media/icons/info.png" width="10" alt="">
+                                        Informações
+                                    </a>
+                                    <a class="btn btn-primary btn-sm margin-top-under-sm" role="button"
+                                        aria-pressed="true">
+                                        <img src="media/icons/play.png" width="10" alt="">
+                                        Assistir
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- four row of Card Deck Layout - OPEN -->
+                    <div class="card-deck">
+
+                        <!-- Wonder Woman - OPEN -->
+                        <div class="card carousel-cell">
+                            <img class="card-img-top" src="media/images/posters/Vingadores_ultimato.jpg" />
+                            <h5 class="card-title text-center"> Vingadores Ultimato </h5>
+                            <div class="overlay">
+                                <div class="text">
+                                    <a onclick="togglePopup('Vingadores Ultimato')"
+                                        class="btn btn-secondary btn-sm margin-top-under-sm" role="button"
+                                        aria-pressed="true">
+                                        <img src="media/icons/info.png" width="10" alt="">
+                                        Informações
+                                    </a>
+                                    <a class="btn btn-primary btn-sm margin-top-under-sm" role="button"
+                                        aria-pressed="true">
+                                        <img src="media/icons/play.png" width="10" alt="">
+                                        Assistir
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Wonder Woman - OPEN -->
+
+                        <!-- Dallas Buyers Club - OPEN -->
+                        <div class="card carousel-cell">
+                            <img class="card-img-top" src="media/images/posters/hp_2001.jpg" />
+                            <h5 class="card-title text-center"> Harry Potter <BR> e a Pedra Filosofal </h5>
+                            <div class="overlay">
+                                <div class="text">
+                                    <a onclick="togglePopup('Harry Potter: Pedra Filosofal')"
+                                        class="btn btn-secondary btn-sm margin-top-under-sm" role="button"
+                                        aria-pressed="true">
+                                        <img src="media/icons/info.png" width="10" alt="">
+                                        Informações
+                                    </a>
+                                    <a class="btn btn-primary btn-sm margin-top-under-sm" role="button"
+                                        aria-pressed="true">
+                                        <img src="media/icons/play.png" width="10" alt="">
+                                        Assistir
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Dallas Buyers Club - OPEN -->
+
+                        <!-- The Revenant - OPEN -->
+                        <div class="card carousel-cell">
+                            <img class="card-img-top" src="media/images/posters/hp_2002.jpg" />
+                            <h5 class="text-center">Harry Potter <br>e a Câmara Secreta</h5>
+                            <div class="overlay">
+                                <div class="text">
+                                    <a onclick="togglePopup('Harry Potter: Camara Secreta')"
+                                        class="btn btn-secondary btn-sm margin-top-under-sm" role="button"
+                                        aria-pressed="true">
+                                        <img src="media/icons/info.png" width="10" alt="">
+                                        Informações
+                                    </a>
+                                    <a class="btn btn-primary btn-sm margin-top-under-sm" role="button"
+                                        aria-pressed="true">
+                                        <img src="media/icons/play.png" width="10" alt="">
+                                        Assistir
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- The Revenant - OPEN -->
+
+                        <!-- The Terminator - OPEN -->
+                        <div class="card carousel-cell">
+                            <img class="card-img-top" src="media/images/posters/piratas_salazar.jpg" />
+                            <h5 class="text-center">Piratas do Caribe: A Vingança de Salazar</h5>
+                            <div class="overlay">
+                                <div class="text">
+                                    <a onclick="togglePopup('Piratas do Caribe A Vingança de Salazar')"
+                                        class="btn btn-secondary btn-sm margin-top-under-sm" role="button"
+                                        aria-pressed="true">
+                                        <img src="media/icons/info.png" width="10" alt="">
+                                        Informações
+                                    </a>
+                                    <a class="btn btn-primary btn-sm margin-top-under-sm" role="button"
+                                        aria-pressed="true">
+                                        <img src="media/icons/play.png" width="10" alt="">
+                                        Assistir
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- The Terminator - OPEN -->
+
+                        <!-- Ex Machina - OPEN -->
+                        <div class="card carousel-cell">
+                            <img class="card-img-top" src="media/images/posters/aranhaverso.jpg" />
+                            <h5 class="text-center">Homem-Aranha no Aranhaverso</h5>
+                            <div class="overlay">
+                                <div class="text">
+                                    <a onclick="togglePopup('Homem-Aranha no Aranhaverso')"
+                                        class="btn btn-secondary btn-sm margin-top-under-sm" role="button"
+                                        aria-pressed="true">
+                                        <img src="media/icons/info.png" width="10" alt="">
+                                        Informações
+                                    </a>
+                                    <a class="btn btn-primary btn-sm margin-top-under-sm" role="button"
+                                        aria-pressed="true">
+                                        <img src="media/icons/play.png" width="10" alt="">
+                                        Assistir
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- four row of Card Deck Layout - OPEN -->
+                    <div class="card-deck">
+
+                        <!-- Wonder Woman - OPEN -->
+                        <div class="card carousel-cell">
+                            <img class="card-img-top" src="media/images/posters/creed.jpg" />
+                            <h5 class="card-title text-center"> Creed: Nascido para Lutar </h5>
+                            <div class="overlay">
+                                <div class="text">
+                                    <a onclick="togglePopup('Creed: Nascido para Lutar')"
+                                        class="btn btn-secondary btn-sm margin-top-under-sm" role="button"
+                                        aria-pressed="true">
+                                        <img src="media/icons/info.png" width="10" alt="">
+                                        Informações
+                                    </a>
+                                    <a class="btn btn-primary btn-sm margin-top-under-sm" role="button"
+                                        aria-pressed="true">
+                                        <img src="media/icons/play.png" width="10" alt="">
+                                        Assistir
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card carousel-cell">
+                            <img class="card-img-top" src="media/images/posters/spacejam2.jpg" />
+                            <h5 class="text-center">Space Jam: Um Novo Legado</h5>
+                            <div class="overlay">
+                                <div class="text">
+                                    <a onclick="togglePopup('Space Jam: Um Novo Legado')"
+                                        class="btn btn-secondary btn-sm margin-top-under-sm" role="button"
+                                        aria-pressed="true">
+                                        <img src="media/icons/info.png" width="10" alt="">
+                                        Informações
+                                    </a>
+                                    <a class="btn btn-primary btn-sm margin-top-under-sm" role="button"
+                                        aria-pressed="true">
+                                        <img src="media/icons/play.png" width="10" alt="">
+                                        Assistir
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card carousel-cell">
+                            <img class="card-img-top" src="media/images/posters/doisfilhosdefrancisco.jpg" />
+                            <h5 class="text-center">2 Filhos de Francisco:<br> A História de Zezé di Camargo & Luciano
+                            </h5>
+                            <div class="overlay">
+                                <div class="text">
+                                    <a onclick="togglePopup('2 Filhos de Francisco A História de Zeze di Camargo & Luciano')"
+                                        class="btn btn-secondary btn-sm margin-top-under-sm" role="button"
+                                        aria-pressed="true">
+                                        <img src="media/icons/info.png" width="10" alt="">
+                                        Informações
+                                    </a>
+                                    <a class="btn btn-primary btn-sm margin-top-under-sm" role="button"
+                                        aria-pressed="true">
+                                        <img src="media/icons/play.png" width="10" alt="">
+                                        Assistir
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card carousel-cell">
+                            <img class="card-img-top" src="media/images/posters/parasite.jpg" />
+                            <h5 class="text-center">Parasita</h5>
+                            <div class="overlay">
+                                <div class="text">
+                                    <a onclick="togglePopup('Parasita')"
+                                        class="btn btn-secondary btn-sm margin-top-under-sm" role="button"
+                                        aria-pressed="true">
+                                        <img src="media/icons/info.png" width="10" alt="">
+                                        Informações
+                                    </a>
+                                    <a class="btn btn-primary btn-sm margin-top-under-sm" role="button"
+                                        aria-pressed="true">
+                                        <img src="media/icons/play.png" width="10" alt="">
+                                        Assistir
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card carousel-cell">
+                            <img class="card-img-top" src="media/images/posters/1922.jpg" />
+                            <h5 class="text-center">1922</h5>
+                            <div class="overlay">
+                                <div class="text">
+                                    <a onclick="togglePopup('1922')"
+                                        class="btn btn-secondary btn-sm margin-top-under-sm" role="button"
+                                        aria-pressed="true">
+                                        <img src="media/icons/info.png" width="10" alt="">
+                                        Informações
+                                    </a>
+                                    <a class="btn btn-primary btn-sm margin-top-under-sm" role="button"
+                                        aria-pressed="true">
+                                        <img src="media/icons/play.png" width="10" alt="">
+                                        Assistir
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="margin-top-under-sm text-center">
+                    <a class="btn btn-outline-secondary btn-lg margin-top-under-sm" role="button" id="loadMore">
+                        Carregar
+                        <img src="media/icons/plus.png" width="15" alt="" class="margin-right-sm padding-bottom-sm">
+                    </a>
+                </div>
+            </div>
+            <!-- Movies tab - CLOSE -->
+        </div>
+    </div>
+    <!-- Content - CLOSE -->
+
+    <!-- JQuery -->
+    <script src="js/jquery.min.js"></script>
+    <!-- JQuery UI -->
+    <script src="js/jquery-ui.min.js" defer></script>
+    <!-- Pooper JS -->
+    <script src="js/popper.min.js" defer></script>
+    <!-- Bootstrap 4.4.1 -->
+    <script src="js/bootstrap.min.js" defer></script>
+    <!-- Flickity 2.2.1 -->
+    <script src="js/flickity.min.js" defer></script>
+    <!-- Main JS -->
+    <script src="js/main.js" defer></script>
+
+    <script src="js/sinopses.js"></script>
+
+</body>
+
+</html>
