@@ -29,4 +29,4 @@ A Uni9flix é um Streaming de Filmes, Séries e documentários proporcionado pel
 
 ## Outras Observações 
 
-Uni9flix é um site fictício criado para um projeto prático da aula de TADS na uninove.
+Uni9flix é um site fictício criado para um projeto prático na uninove.
