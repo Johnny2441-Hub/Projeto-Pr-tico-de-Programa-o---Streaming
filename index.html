@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>
+    Uni9Flix - Streaming Nove de Julho
+  </title>
+  <link rel="stylesheet" href="css_inicial/style.css" />
+  <link rel="shortcut icon" href="icone.ico" />
+</head>
+
+<body>
+  <header class="header">
+    <img src="img_inicial/uni9flix.png" alt="uni9flix" draggable="false" />
+  </header>
+  <main class="main">
+    <div class="main-child">
+      <h1>O streaming <br>
+        dos universitários.</h1>
+      <span>Venha aproveitar o nosso catálogo.</span>
+      <p>
+        Digite seu RA para acessar
+      </p>
+      <form class="form-cta">
+        <input required="required"
+          oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+          type="number" maxlength="10" placeholder="Digite o seu RA" />
+        <button formmethod="get" formaction="catalogo.html">Vamos lá</button>
+      </form>
+    </div>
+    <div class="gradient"></div>
+  </main>
+  <section class="section">
+    <div class="container">
+      <div class="grid">
+        <div>
+          <h1>A idéia.</h1>
+          <p>
+            A uninove criou o streaming Uni9flix para seus alunos
+            aproveitarem um conteúdo de qualidade em seu momento de lazer pós estudos.
+          </p>
+        </div>
+        <div class="img-tv">
+          <img src="img_inicial/uninove.png" alt="TV" />
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="download section">
+    <div class="container">
+      <div class="grid">
+        <div>
+          <h1>Assista seu título favorito.</h1>
+          <p>
+            Entretenimento de qualidade que busca além da diversão, trazer um aprendizado
+            aos telespectadores.
+          </p>
+        </div>
+        <div class="img-tv">
+          <img src="img_inicial/fotocelular.png" alt="El" />
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="device-pile section">
+    <div class="container">
+      <div class="grid">
+        <div>
+          <h1>Assista em diversos aparelhos.</h1>
+          <p>
+            acesse pelo celular, tablet, smart TV ou notebook e utilize a função multitelas
+            que permite o uso simultâneo entre diferentes aparelhos.
+          </p>
+        </div>
+        <div class="img-tv">
+          <img src="img_inicial/device-pile.png" alt="Device Pile" />
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer class="footer">
+    <section class="faq">
+      <h1>Perguntas frequentes</h1>
+      <dl class="faq-list">
+        <dt class="faq-question">O que é a Uni9flix?</dt>
+        <dd class="faq-answer">
+          <div>
+            A Uni9Flix é um serviço online de transmissão de conteúdo para milhares de alunos da Uninove.<br>
+            <br>
+            Aqui você pode assistir diversos conteúdos, quando e onde quiser.
+          </div>
+        </dd>
+        <dt class="faq-question">Qual o preço?</dt>
+        <dd class="faq-answer">
+          <div>
+            Uni9flix é de graça e está disponível para todos os alunos da
+            universidade nove de julho.
+          </div>
+        </dd>
+        <dt class="faq-question">O que assistir?</dt>
+        <dd class="faq-answer">
+          <div>
+            A Uni9Flix tem um imenso catálogo de filmes, séries e documentários, sempre adicionando novos títulos de
+            acordo com o gosto dos alunos.
+          </div>
+        </dd>
+      </dl>
+    </section>
+
+    <p>Copyright © 2021 Uni9Flix Brasil. Todos os direitos reservados.</p>
+  </footer>
+  <script src="js_inicial/script.js"></script>
+</body>
+
+</html>

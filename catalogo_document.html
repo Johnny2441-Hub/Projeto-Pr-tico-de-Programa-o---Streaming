@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <title> Uni9Flix - Streaming Nove de Julho </title>
+
+    <!-- SEO -->
+    <title>Uni9Flix - Streaming Nove de Julho</title>
+    <meta name="description" content="Netflix">
+
+    <!-- Bootstrap 4.4.1 -->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <!-- Flickity 2.2.1 -->
+    <link rel="stylesheet" type="text/css" href="css/flickity.css">
+    <!-- JQuery UI -->
+    <link rel="stylesheet" type="text/css" href="css/jquery-ui.css">
+    <!-- Main CSS -->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+    <!-- FAVICONS -->
+    <link rel="shortcut icon" type="image/x-icon" href="media/images/netflix_icon.png">
+    <link rel="shortcut icon" sizes="16x16" href="media/favicon/favicon-16x16.png">
+    <link rel="shortcut icon" sizes="32x32" href="media/favicon/favicon-32x32.png">
+    <link rel="apple-touch-icon icon" sizes="76x76" href="media/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon icon" sizes="120x120" href="media/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon icon" sizes="152x152" href="media/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon icon" sizes="180x180" href="media/favicon/apple-icon-180x180.png">
+
+    <!-- Android -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="theme-color" content="#141414">
+</head>
+
+<body>
+
+    <!-- Começo PopUp Sinopse-->
+    <div class="popup" id="popup-1">
+        <div class="overlay_sinopse" onclick="togglePopup()"></div>     <!-- Escurecer página -->
+        <div class="content"><!-- Comeco Conteudo PopUp -->
+            <div class="close-btn " onclick="togglePopup()">&times;</div><!-- Botão fechar PopUp -->
+            <img id="imagem" class="mb-3" src="" alt="" width="175px" height="250px"> <!-- Imagem da obra -->
+            <h1 id="titulo" class="mb-3"></h1> <!-- Titulo -->
+            <p id="conteudo"></p><!-- Sinopse -->
+        </div><!-- Final Conteudo PopUp -->
+    </div>
+    <!-- Final PopUp Sinopse-->
+
+    <!-- Navbar - OPEN -->
+    <nav class="navbar navbar-expand-lg fixed-top navbar-dark" id="navbar">
+        <!-- Navbar content - OPEN -->
+        <div class="container-lg">
+
+            <!-- Logo - OPEN -->
+            <a class="navbar-brand logo" href="/">
+                <img src="media/images/logo.png" width="80" alt="">
+            </a>
+            <!-- Logo - CLOSE -->
+
+            <!-- Content collapse - OPEN -->
+            <div class="collapse navbar-collapse" id="navbarToggler">
+
+                <!-- Left - OPEN -->
+                <ul class="navbar-nav mr-auto my-2 my-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link navbar-nav-item" href="index.html">
+                            Inicial
+                        </a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link navbar-nav-item" href="catalogo.html">
+                            Catálogo <span class="sr-only">(current)</span>
+                        </a>
+                    </li>
+                </ul>
+                <!-- Left - CLOSE -->
+
+            </div>
+            <!-- Content collapse - CLOSE -->
+
+        </div>
+        <!-- Navbar content - CLOSE -->
+
+    </nav>
+    <!-- Navbar - CLOSE -->
+
+    <!-- Slider - OPEN -->
+
+    <!-- Content - OPEN -->
+    <div class="container-lg margin-top margin-bottom">
+
+        <!-- Tabs nav - OPEN -->
+        <nav class="nav nav-fill nav-pills" id="pills-tab" role="tablist">
+            <a class="nav-item nav-link active" id="trend-tab" data-toggle="pill" href="#trend" role="tab"
+                aria-controls="trend-tab" aria-selected="true">
+                <div class="icon-nav">
+                    <img src="media/icons/trend.png" width="20" alt="" class="margin-right-sm">
+                    Top - Hoje
+                </div>
+            </a>
+        </nav>
+        <!-- Tabs nav - CLOSE -->
+
+        <!-- Tabs content - OPEN -->
+        <div class="tab-content" id="myTabContent">
+
+            <!-- Trend tab - OPEN -->
+            <div class="margin-top-under-sm tab-pane fade show active" id="trend" role="tabpanel"
+                aria-labelledby="trend-tab">
+
+                <!-- Carousel - OPEN -->
+                <div class="carousel"
+                    data-flickity='{ "groupCells": true, "cellAlign": "center", "pageDots": false, "wrapAround": false, "draggable": false }'
+                    style="height: 400px">
+
+                    <div class="carousel-cell">
+                        <img class="carousel-cell-image" src="media/images/documentarios/ronaldo.jpg" />
+                        <h5 class="text-center">Ronaldo</h5>
+                        <div class="overlay">
+                            <div class="text">
+                                <a  onclick="togglePopup('Ronaldo')" class="btn btn-secondary btn-sm margin-top-under-sm" role="button"
+                                    aria-pressed="true">
+                                    <img src="media/icons/info.png" width="10" alt="">
+                                    Informações
+                                </a>
+                                <a href="#" class="btn btn-primary btn-sm margin-top-under-sm" role="button"
+                                    aria-pressed="true">
+                                    <img src="media/icons/play.png" width="10" alt="">
+                                    Assistir
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carousel-cell">
+                        <img class="carousel-cell-image" src="media/images/documentarios/universo.jpg" />
+                        <h5 class="text-center">O Universo</h5>
+                        <div class="overlay">
+                            <div class="text">
+                                <a onclick="togglePopup('O Universo')" class="btn btn-secondary btn-sm margin-top-under-sm" role="button"
+                                    aria-pressed="true">
+                                    <img src="media/icons/info.png" width="10" alt="">
+                                    Informações
+                                </a>
+                                <a href="#" class="btn btn-primary btn-sm margin-top-under-sm" role="button"
+                                    aria-pressed="true">
+                                    <img src="media/icons/play.png" width="10" alt="">
+                                    Assistir
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carousel-cell">
+                        <img class="carousel-cell-image" src="media/images/documentarios/Arremesso_Final.jpg" />
+                        <h5 class="text-center">Arremesso Final</h5>
+                        <div class="overlay">
+                            <div class="text">
+                                <a onclick="togglePopup('Arremesso Final')" class="btn btn-secondary btn-sm margin-top-under-sm" role="button"
+                                    aria-pressed="true">
+                                    <img src="media/icons/info.png" width="10" alt="">
+                                    Informações
+                                </a>
+                                <a href="#" class="btn btn-primary btn-sm margin-top-under-sm" role="button"
+                                    aria-pressed="true">
+                                    <img src="media/icons/play.png" width="10" alt="">
+                                    Assistir
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carousel-cell">
+                        <img class="carousel-cell-image" src="media/images/documentarios/our_planet.jpg" />
+                        <h5 class="text-center">Nosso Planeta</h5>
+                        <div class="overlay">
+                            <div class="text">
+                                <a onclick="togglePopup('Nosso Planeta')" class="btn btn-secondary btn-sm margin-top-under-sm" role="button"
+                                    aria-pressed="true">
+                                    <img src="media/icons/info.png" width="10" alt="">
+                                    Informações
+                                </a>
+                                <a href="#" class="btn btn-primary btn-sm margin-top-under-sm" role="button"
+                                    aria-pressed="true">
+                                    <img src="media/icons/play.png" width="10" alt="">
+                                    Assistir
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                <!-- Carousel - CLOSE -->
+
+            </div>
+            <!-- Trend tab - CLOSE -->
+        </div>
+        <!-- Tabs content - OPEN -->
+
+        <!-- Tabs nav - OPEN -->
+        <nav class="nav nav-fill nav-pills" id="explore-tabs" role="tablist">
+            <a class="nav-item nav-link" id="movies-tab" href="catalogo.html" role="tab" aria-controls="movies-tab"
+                aria-selected="true">
+                <div class="icon-nav">
+                    <img src="media/icons/cinema.png" width="15" alt="" class="margin-right-sm padding-bottom-sm">
+                    Filmes
+                </div>
+            </a>
+            <a class="nav-item nav-link" id="tvshows-tab" href="catalogo_series.html" role="tab"
+                aria-controls="tvshows-tab" aria-selected="false">
+                <div class="icon-nav">
+                    <img src="media/icons/tv.png" width="15" alt="" class="margin-right-sm padding-bottom-sm">
+                    Séries
+                </div>
+            </a>
+            <a class="nav-item nav-link active" id="tvshows-tab" href="catalogo_document.html" role="tab"
+                aria-controls="document-tab" aria-selected="false">
+                <div class="icon-nav">
+                    <img src="media/icons/document.png" width="15" alt="" class="margin-right-sm padding-bottom-sm">
+                    Documentários
+                </div>
+            </a>
+        </nav>
+        <!-- Tabs nav - CLOSE -->
+
+        <!-- Tabs content - OPEN -->
+        <div class="tab-content" id="exploreContent">
+            <!-- Movies tab - OPEN -->
+            <div class="margin-top-under-sm tab-pane fade show active" id="document" role="tabpanel"
+                aria-labelledby="document-tab">
+
+                <!-- Grid cards films - OPEN -->
+                <div id="grid-document">
+
+                    <div class="card-deck margin-top">
+
+                        <div class="card carousel-cell">
+                            <img class="card-image-top" src="media/images/documentarios/our_planet.jpg" />
+                            <h5 class="text-center">Nosso Planeta</h5>
+                            <div class="overlay">
+                                <div class="text">
+                                    <a onclick="togglePopup('Nosso Planeta')" class="btn btn-secondary btn-sm margin-top-under-sm" role="button"
+                                        aria-pressed="true">
+                                        <img src="media/icons/info.png" width="10" alt="">
+                                        Informações
+                                    </a>
+                                    <a href="#" class="btn btn-primary btn-sm margin-top-under-sm" role="button"
+                                        aria-pressed="true">
+                                        <img src="media/icons/play.png" width="10" alt="">
+                                        Assistir
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card carousel-cell Action">
+                            <img class="card-img-top" src="media/images/documentarios/misha_wolves.jpg" />
+                            <h5 class="card-title text-center">Misha e os Lobos</h5>
+                            <div class="overlay">
+                                <div class="text">
+                                    <a  onclick="togglePopup('Misha e os Lobos')" class="btn btn-secondary btn-sm margin-top-under-sm" role="button"
+                                        aria-pressed="true">
+                                        <img src="media/icons/info.png" width="10" alt="">
+                                        Informações
+                                    </a>
+                                    <a href="#" class="btn btn-primary btn-sm margin-top-under-sm" role="button"
+                                        aria-pressed="true">
+                                        <img src="media/icons/play.png" width="10" alt="">
+                                        Assistir
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card carousel-cell">
+                            <img class="card-img-top" src="media/images/documentarios/the_woman_themurderer.jpg" />
+                            <h5 class="card-title text-center">Elas Contra O Serial Killer</h5>
+                            <div class="overlay">
+                                <div class="text">
+                                    <a  onclick="togglePopup('Elas Contra O Serial Killer')" class="btn btn-secondary btn-sm margin-top-under-sm" role="button"
+                                        aria-pressed="true">
+                                        <img src="media/icons/info.png" width="10" alt="">
+                                        Informações
+                                    </a>
+                                    <a href="#" class="btn btn-primary btn-sm margin-top-under-sm" role="button"
+                                        aria-pressed="true">
+                                        <img src="media/icons/play.png" width="10" alt="">
+                                        Assistir
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card carousel-cell">
+                            <img class="card-img-top" src="media/images/documentarios/world_war_ii.jpg" />
+                            <h5 class="card-title text-center">Grandes Momentos <br>da<br> Segunda Guerra em cores</h5>
+                            <div class="overlay">
+                                <div class="text">
+                                    <a onclick="togglePopup('Grandes Momentos da Segunda Guerra em cores')" class="btn btn-secondary btn-sm margin-top-under-sm" role="button"
+                                        aria-pressed="true">
+                                        <img src="media/icons/info.png" width="10" alt="">
+                                        Informações
+                                    </a>
+                                    <a href="#" class="btn btn-primary btn-sm margin-top-under-sm" role="button"
+                                        aria-pressed="true">
+                                        <img src="media/icons/play.png" width="10" alt="">
+                                        Assistir
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card carousel-cell">
+                            <img class="card-img-top" src="media/images/documentarios/Arremesso_Final.jpg" />
+                            <h5 class="card-title text-center"> Arremesso Final </h5>
+                            <div class="overlay">
+                                <div class="text">
+                                    <a  onclick="togglePopup('Arremesso Final')" class="btn btn-secondary btn-sm margin-top-under-sm" role="button"
+                                        aria-pressed="true">
+                                        <img src="media/icons/info.png" width="10" alt="">
+                                        Informações
+                                    </a>
+                                    <a href="#" class="btn btn-primary btn-sm margin-top-under-sm" role="button"
+                                        aria-pressed="true">
+                                        <img src="media/icons/play.png" width="10" alt="">
+                                        Assistir
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-deck">
+
+                    <div class="card carousel-cell">
+                        <img class="card-img-top" src="media/images/documentarios/chorao_marginal.jpg" />
+                        <h5 class="card-title text-center"> Chorão: Marginal Alado </h5>
+                        <div class="overlay">
+                            <div class="text">
+                                <a onclick="togglePopup('Chorão: Marginal Alado')" class="btn btn-secondary btn-sm margin-top-under-sm" role="button"
+                                    aria-pressed="true">
+                                    <img src="media/icons/info.png" width="10" alt="">
+                                    Informações
+                                </a>
+                                <a href="#" class="btn btn-primary btn-sm margin-top-under-sm" role="button"
+                                    aria-pressed="true">
+                                    <img src="media/icons/play.png" width="10" alt="">
+                                    Assistir
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card carousel-cell">
+                        <img class="card-img-top" src="media/images/documentarios/f1.jpg" />
+                        <h5 class="card-title text-center"> F1: Dirigir para Viver </h5>
+                        <div class="overlay">
+                            <div class="text">
+                                <a onclick="togglePopup('F1: Dirigir para Viver')" class="btn btn-secondary btn-sm margin-top-under-sm" role="button"
+                                    aria-pressed="true">
+                                    <img src="media/icons/info.png" width="10" alt="">
+                                    Informações
+                                </a>
+                                <a href="#" class="btn btn-primary btn-sm margin-top-under-sm" role="button"
+                                    aria-pressed="true">
+                                    <img src="media/icons/play.png" width="10" alt="">
+                                    Assistir
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card carousel-cell">
+                        <img class="card-img-top" src="media/images/documentarios/dilema_redes.jpg" />
+                        <h5 class="card-title text-center"> O Dilema das Redes </h5>
+                        <div class="overlay">
+                            <div class="text">
+                                <a onclick="togglePopup('O Dilema das Redes')" class="btn btn-secondary btn-sm margin-top-under-sm" role="button"
+                                    aria-pressed="true">
+                                    <img src="media/icons/info.png" width="10" alt="">
+                                    Informações
+                                </a>
+                                <a href="#" class="btn btn-primary btn-sm margin-top-under-sm" role="button"
+                                    aria-pressed="true">
+                                    <img src="media/icons/play.png" width="10" alt="">
+                                    Assistir
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="card carousel-cell">
+                        <img class="card-img-top" src="media/images/documentarios/ronaldo.jpg" />
+                        <h5 class="card-title text-center"> Ronaldo </h5>
+                        <div class="overlay">
+                            <div class="text">
+                                <a  onclick="togglePopup('Ronaldo')" class="btn btn-secondary btn-sm margin-top-under-sm" role="button"
+                                    aria-pressed="true">
+                                    <img src="media/icons/info.png" width="10" alt="">
+                                    Informações
+                                </a>
+                                <a href="#" class="btn btn-primary btn-sm margin-top-under-sm" role="button"
+                                    aria-pressed="true">
+                                    <img src="media/icons/play.png" width="10" alt="">
+                                    Assistir
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="card carousel-cell">
+                        <img class="card-img-top" src="media/images/documentarios/universo.jpg" />
+                        <h5 class="card-title text-center"> O Universo </h5>
+                        <div class="overlay">
+                            <div class="text">
+                                <a  onclick="togglePopup('O Universo')" class="btn btn-secondary btn-sm margin-top-under-sm" role="button"
+                                    aria-pressed="true">
+                                    <img src="media/icons/info.png" width="10" alt="">
+                                    Informações
+                                </a>
+                                <a href="#" class="btn btn-primary btn-sm margin-top-under-sm" role="button"
+                                    aria-pressed="true">
+                                    <img src="media/icons/play.png" width="10" alt="">
+                                    Assistir
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <!--<div class="margin-top-under-sm text-center">
+                <a href="#" class="btn btn-outline-secondary btn-lg margin-top-under-sm" role="button" id="loadMore">
+                    Carregar
+                    <img src="media/icons/plus.png" width="15" alt="" class="margin-right-sm padding-bottom-sm">
+                </a>
+            </div>-->
+        </div>
+        <!-- Movies tab - CLOSE -->
+    </div>
+    </div>
+    <!-- Content - CLOSE -->
+
+    <!-- JQuery -->
+    <script src="js/jquery.min.js"></script>
+    <!-- JQuery UI -->
+    <script src="js/jquery-ui.min.js" defer></script>
+    <!-- Pooper JS -->
+    <script src="js/popper.min.js" defer></script>
+    <!-- Bootstrap 4.4.1 -->
+    <script src="js/bootstrap.min.js" defer></script>
+    <!-- Flickity 2.2.1 -->
+    <script src="js/flickity.min.js" defer></script>
+    <!-- Main JS -->
+    <script src="js/main.js" defer></script>
+   <!-- Sinopses -->
+    <script src="js/sinopses.js"></script>
+
+</body>
+
+</html>
