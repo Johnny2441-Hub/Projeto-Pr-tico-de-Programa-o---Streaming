@@ -24,7 +24,7 @@ A Uni9flix é um Streaming de Filmes, Séries e documentários proporcionado pel
 ## Endereço da Aplicação
 
 * Endereço da aplicação  
-	- streamingonline.atwebpages.com/
+	- http://streamingonline.atwebpages.com/
 	+ Hospedado no Awardspace 
 
 ## Outras Observações 
