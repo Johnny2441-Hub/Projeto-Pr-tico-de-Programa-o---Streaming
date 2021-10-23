@@ -32,4 +32,5 @@ A Uni9flix é um Streaming de Filmes, Séries e documentários proporcionado pel
 + Uni9flix é um site fictício inspirado na Netflix, criado para um projeto prático da Uninove
 + As vezes é necessário dar 2 clicks para alternar entre as abas de Filmes, séries e documentários
 + Botão informações funciona, o assistir não
-+ Em digite seu RA só é aceito números.
++ Em digite seu RA só é aceito números
++ O awardspace demora para carregar.
